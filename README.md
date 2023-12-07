@@ -88,6 +88,8 @@ $ hostname -I
 
 > _O resultado retornado deve ser algo como: 192.168.1.104 172.18.0.1 172.17.0.1_
 
+- Agora, execute o servidor local usando o php
+
 ```
 $ php -S 192.168.1.104:7654 -t public
 ```
