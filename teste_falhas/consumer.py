@@ -34,6 +34,8 @@ for job in client.reserve_iter():
             print("Simulating connection failure...")
             client.close()
             raise MyBeanstalkError("Connection failure!")
+        
+        processed_count += 1
     
     except MyBeanstalkError as ex:
         print(f"Error: {ex}")
